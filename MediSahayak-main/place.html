@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Medicine Order</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places"></script>
+    <link rel="stylesheet" href="place.css">
+</head>
+<body>
+    <div class="order-container">
+        <h2>Order Medicine</h2>
+        <form id="orderForm">
+            <label for="medicineName">Medicine Name</label>
+            <input type="text" id="medicineName" required>
+            <button type="button" onclick="findNearbyLocations()">Find Nearby Locations</button>
+        </form>
+        <div id="locations-list">
+            <h3>Nearby Locations</h3>
+            <ul id="locationResults"></ul>
+        </div>
+    </div>
+    <script src="place.js"></script>
+</body>
+</html>
